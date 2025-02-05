@@ -1,14 +1,18 @@
 import { Github, Linkedin } from 'lucide-react';
 import { Navbar } from './Navbar';
+import { ProjectDetails } from '../Projects/ProjectDetails';
 import { usePortfolio } from '@/context/PortfolioContext';
 
 export const LeftPanel = () => {
+  const { activeProject } = usePortfolio();
 
   return (
     <div className="w-full lg:w-1/2 space-y-8">
       <Navbar />
       
-      
+      {activeProject ? (
+        <ProjectDetails project={activeProject} />
+      ) : (
         <>
           <div className="space-y-6">
             <h1 className="font-minecraft text-4xl lg:text-6xl">
@@ -41,7 +45,7 @@ export const LeftPanel = () => {
             </a>
           </div>
         </>
-      
+      )}
     </div>
   );
 };
