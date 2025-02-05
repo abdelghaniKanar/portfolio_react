@@ -1,5 +1,7 @@
 import { ThemeProvider } from './context/ThemeContext';
 import { PortfolioProvider } from './context/PortfolioContext';
+import { LeftPanel } from './components/Layout/LeftPanel';
+import { RightPanel } from './components/Layout/RightPanel';
 
 function App() {
   return (
