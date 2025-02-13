@@ -1,6 +1,35 @@
 import { useState } from 'react';
 
 export const ContactSection = () => {
+
+  // const [text, setText] = useState("");
+
+  // return (
+  //   <div className="p-4 space-y-4">
+  //     <input
+  //       type="text"
+  //       value={text}
+  //       onChange={(e) => setText(e.target.value)}
+  //       className="border p-2 rounded w-full"
+  //       placeholder="Type something..."
+  //     />
+  //     <p className="text-lg font-semibold">{text}</p>
+  //   </div>
+  // );
+
+  // const [text, setText] =  useState(0);
+  // return (<div className='p-4 space-y-4'>
+  //   <input className='border p-2 rounded w-full' type="text" value={text} onChange={(e) => setText(e.target.value)} />
+  //   <p>{text}</p>
+  // </div>)
+  // return (<div className='p-4 space-y-4'>
+  //   <button
+  //       onClick={() => setText(text + 1)}
+  //       className="bg-blue-500 text-white px-4 py-2 rounded"
+  //     >
+  //       {text}
+  //     </button>
+  // </div>)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -71,5 +100,7 @@ export const ContactSection = () => {
         Send
       </button>
     </form>
+
+    
   );
 };

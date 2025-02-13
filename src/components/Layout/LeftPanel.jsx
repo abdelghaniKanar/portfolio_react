@@ -9,7 +9,7 @@ export const LeftPanel = () => {
   return (
     <div className="w-full lg:w-1/2 space-y-8">
       <Navbar />
-      
+
       {activeProject ? (
         <ProjectDetails project={activeProject} />
       ) : (
@@ -19,11 +19,11 @@ export const LeftPanel = () => {
               KANAR ABDELGHANI
             </h1>
             <p className="font-nunito text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Nulla vitae elit libero, a pharetra augue.
             </p>
           </div>
-          
+
           <div className="flex gap-4">
             <a
               href="https://github.com"
@@ -46,6 +46,10 @@ export const LeftPanel = () => {
           </div>
         </>
       )}
+
+      
     </div>
+
+
   );
 };
